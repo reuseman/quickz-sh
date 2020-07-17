@@ -3,32 +3,32 @@ export TERM="xterm-256color"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=$HOME/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 
 
-POWERLEVEL9K_MODE='nerdfont-complete'
+# POWERLEVEL9K_MODE='nerdfont-complete'
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 
-POWERLEVEL9K_OS_ICON_BACKGROUND="white"
-POWERLEVEL9K_OS_ICON_FOREGROUND="blue"
-POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
-POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
-POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
+# POWERLEVEL9K_OS_ICON_BACKGROUND="white"
+# POWERLEVEL9K_OS_ICON_FOREGROUND="blue"
+# POWERLEVEL9K_DIR_HOME_FOREGROUND="white"
+# POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND="white"
+# POWERLEVEL9K_DIR_DEFAULT_FOREGROUND="white"
 
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status command_execution_time background_jobs todo ram load rvm time)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv status command_execution_time background_jobs todo ram load rvm time)
 
 # more prompt elements that are suggested
 # (public_ip docker_machine pyenv nvm)          https://github.com/bhilburn/powerlevel9k#prompt-customization
 # Note: using public_ip is cool but when connection is down prompt waits for 10-20 seconds
 
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh os_icon context dir rbenv vcs)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(ssh os_icon context dir rbenv vcs)
 
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -75,19 +75,19 @@ POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    zsh-completions
+    # zsh-completions
     zsh-autosuggestions
-    history-substring-search
-    python
-    httpie
-    docker
-    lol
-    pip
-    pyenv
-    redis-cli
-    screen
-    systemd
-    web-search
+    # history-substring-search
+    # python
+    # httpie
+    # docker
+    # lol
+    # pip
+    # pyenv
+    # redis-cli
+    # screen
+    # systemd
+    # web-search
     k
     # zsh-wakatime          # enable if you use wakatime with 'https://github.com/wbingli/zsh-wakatime'
     zsh-syntax-highlighting
@@ -138,7 +138,7 @@ export MARKER_KEY_NEXT_PLACEHOLDER="\C-b"   #change maker key binding from Ctr+t
 
 [[ -s "$HOME/.local/share/marker/marker.sh" ]] && source "$HOME/.local/share/marker/marker.sh"
 
-export PATH=$PATH:~/.quickzsh/todo/bin    #usig alias doesn't properly work
+# export PATH=$PATH:~/.quickzsh/todo/bin    #usig alias doesn't properly work
 
 autoload -U compinit && compinit        # zsh-completions
 # autoload bashcompinit                 # bash completions
@@ -150,7 +150,7 @@ SAVEHIST=50000      #save upto 50,000 lines in history. oh-my-zsh default is 10,
 
 alias myip="wget -qO- https://wtfismyip.com/text"	# quickly show external ip address
 alias l="ls -lah"
-alias x="exit"
+#alias x="exit"
 alias k="k -h"						# show human readable filesizes, in kb, mb etc
 
 https() {                                           # make httpie use https
